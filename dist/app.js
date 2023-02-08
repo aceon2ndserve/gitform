@@ -30,7 +30,7 @@ button.addEventListener("click", async (e) => {
         address: address.value,
     };
     console.log(userData);
-    const data = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${userData.address.trim()}+${userData.city}+${userData.postalCode.trim()}&key=${process.env.GOOGLE_API`);
+    const data = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${userData.address.trim()}+${userData.city}+${userData.postalCode.trim()}&key=${process.env.GOOGLE_API}`);
     if (!data.ok) {
         /* Handle */
     }
