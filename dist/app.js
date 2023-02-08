@@ -51,4 +51,4 @@ button.addEventListener("click", async (e) => {
         console.log(finalData);
     }
 });
-export {};
+
